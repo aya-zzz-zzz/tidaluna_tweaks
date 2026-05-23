@@ -1,0 +1,16 @@
+span.rl-wbw-word.rl-syl-finished{
+    color: #ffffff!important;
+    text-shadow: 0px 0px 11px rgba(255, 255, 255, 0.41) !important;
+    transition-timing-function: cubic-bezier(0,1,.1,.92);
+    transition: 2500ms!important;
+    transition-delay: -1650ms!important;}
+span.rl-wbw-word.rl-syl-active{
+    color: rgba(38, 0, 255, 0)!important;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.4) !important;
+    transition: 20ms!important; transition-delay: -15ms;
+        background-image: 
+    linear-gradient(90deg, transparent 0, var(--cl-glow1, #fff) 50%, transparent 100%), 
+    linear-gradient(90deg, var(--cl-glow1, #fff) 100%, transparent 100%), 
+    linear-gradient(90deg, rgba(255, 255, 255, .3), rgba(255, 255, 255, .3));}
+.rl-wbw-word{color: rgba(255, 255, 255, .2)!important;
+text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.2) !important;}
