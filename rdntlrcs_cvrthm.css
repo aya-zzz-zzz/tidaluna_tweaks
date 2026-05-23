@@ -1,0 +1,32 @@
+
+[data-test=now-playing-lyrics] span[data-test=lyrics-line]{
+    color: color-mix(in srgb, rgb(var(--cover-LightVibrant), .875) 70% , #ffffff70 30%)  !Important;}
+/*hover lyrics (all)*/
+div > div._marketText_1lyag_1._display10_1lyag_39._text_4a89397._hasCues_15d8b83 > div > div > span:hover,div._marketText_1lyag_1._display10_1lyag_39._text_4a89397._hasCues_15d8b83 > div > div> span.rl-wbw-word.rl-wbw-word-hover{
+    color:  color-mix(in srgb, rgb(var(--cover-LightVibrant), .875) 70% , #ffffff70 30%)  !Important;
+    text-shadow: 0 0 var(--rl-glow-inner, 2px) rgb(var(--cover-LightVibrant), .275), 0 0 var(--rl-glow-outer, 20px) rgb(var(--cover-Vibrant), .275) !important;}
+/*syl lyrics line by line fallback*/
+/*line by line lyrics hover*/
+[class*="_lyricsText"]>div>span:hover,.rl-wbw-line:not(.rl-wbw-line-active)>.rl-wbw-word.rl-wbw-word-hover, .rl-wbw-line:not(.rl-wbw-line-active)>.rl-wbw-word:hover {
+   color: color-mix(in srgb, rgb(var(--cover-LightVibrant), .96) 62.5% ,rgb(255, 255, 255) 37.5%) !important;
+    text-shadow: 0px 0px var(--rl-glow-outer) color-mix(in srgb, rgb(var(--cover-LightVibrant), .7) 95% , #ffffff40 5%) !important;}
+/*word by word lyrics ("span.rl-wbw-word" controls lyrics style for lyrics w/ no syl/line support)*/
+span.rl-wbw-word.rl-wbw-active,div._marketText_1lyag_1._display10_1lyag_39._text_4a89397._hasCues_15d8b83 > span._current_8d537f4{
+    color: color-mix(in srgb, rgb(var(--cover-LightVibrant), .96) 62.5% ,rgb(255, 255, 255) 37.5%) !important;
+    text-shadow: 0px 0px var(--rl-glow-outer) color-mix(in srgb, rgb(var(--cover-LightVibrant), .7) 95% , #00000040 5%) !important;}
+span.rl-wbw-word.rl-syl-finished{
+    color: color-mix(in srgb, rgb(var(--cover-LightVibrant),1)60%,#ffffff 40%) !important;
+    text-shadow: 0px 0px 8px color-mix(in srgb, rgb(var(--cover-LightVibrant),.4)60%,#ffffff5e 40%) !important;
+    transition-timing-function: cubic-bezier(0,1,.1,.92);
+    transition: 2500ms!important;
+    transition-delay: -1650ms!important;}
+span.rl-wbw-word.rl-syl-active{
+    color: rgba(38, 0, 255, 0)!important;
+    text-shadow: 0px 0px 7px color-mix(in srgb, rgb(var(--cover-LightVibrant),.3)60%,#ffffff3f 40%) !important;
+    transition: 20ms!important; transition-delay: -15ms;
+        background-image: 
+    linear-gradient(90deg, transparent 0, var(--cl-glow1, color-mix(in srgb, rgb(var(--cover-LightVibrant),1)60%,#ffffff 40%)) 50%, transparent 100%), 
+    linear-gradient(90deg, var(--cl-glow1, color-mix(in srgb, rgb(var(--cover-LightVibrant),1)60%,#ffffff 40%)) 100%, transparent 100%), 
+    linear-gradient(90deg, color-mix(in srgb, rgb(var(--cover-LightVibrant),.3)60%,#ffffff51 40%), color-mix(in srgb, rgb(var(--cover-LightVibrant),.3)60%,#ffffff51 40%));}
+.rl-wbw-word{color: color-mix(in srgb, rgb(var(--cover-LightVibrant),.2)60%,rgba(255, 255, 255, 0.18) 40%)!important;
+text-shadow: 0px 0px 6px color-mix(in srgb, rgb(var(--cover-LightVibrant),.2)60%,rgba(255, 255, 255, 0.18) 40%)!important;}
