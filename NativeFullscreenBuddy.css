@@ -1,0 +1,65 @@
+/* =========================================================..............................................................
+        LUNALLENA-INSPIRED HEADER-REMOVAL-SYSTEM 
+  ---------------------------------------------------------------- ========================================================= */
+/*HEADER REMOVAL SYSTEM*/
+#main{min-height: 100vh;margin-top: 0px !important;}
+[class*="MuiContainer"]{margin-top: 70px;padding-bottom: calc(var(--miniPlayerHeight) - 70px);}
+/*now-playing faux fullscreen*/
+#nowPlaying > div{transform: translateY(-2.2em);}
+#nowPlayingHeader{transform: translateY(.95em);}#nowPlaying > div > div._leftColumn_52725d9._albumMediaQueries_714afcc{transform: translateY(1.01em);}
+/*HOME FEED*/
+._feed_412931c{transform: translateY(-1.6em);}
+/*now-playing fullscreen adjustments*/
+[class="_wrapper_512d5f4"]{
+    height: calc(100% - (var(--miniPlayerHeight)*0.6 ))!Important;margin-top: 0.65em;}
+[class="_container_217add2"]{
+[class="_creditsList_7124af4"]{transform: translateY(2em);padding-bottom: 33em;}}
+[data-test="now-playing-similar-tracks"]{transform: translateY(1.1em);}
+/*fullscreen no footer*/
+.is-fullscreen ._fullscreen_236d61b, .is-compact-mode ._fullscreen_236d61b{
+._panelWrapper_5734a06._panelWrapperActive_404b577{
+    transition: 300ms;height: calc(100% - (var(--miniPlayerHeight)*1.125 ));margin-top: 5.5em;}
+transform: translateY(2.2em);
+[class="_header_2fcc3e4"] {transform: translateY(-2em);}
+[class="_wrapper_512d5f4"] {height:100%;transform: translateY(0em); transition: 300ms; transition-delay: -65ms;}}
+/* TOPBAR COLOR*/
+#wimp > div > div > div._mainContainer_6519c30._hasPlayer_57557c6 > div._bar_5b9ac59._smallText_a636ed6{width: 100%!important;background-color: rgba(255, 0, 0, 0)!important;backdrop-filter: blur(1px)!important;
+background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0))!important; }
+/*fullscreen with footer*/
+[class="_fullscreen_236d61b"]{._panelWrapper_5734a06._panelWrapperActive_404b577{
+height: calc(100% - (var(--miniPlayerHeight)*1.51 ))!important; transition: 310ms!important; transition-delay: -95ms!important;}}
+/* MAIN CONTENT SHIFT (HEADER REMOVAL CONT)*/
+.mainContent
+{padding-bottom: var(--miniPlayerHeight);margin-top: 2em;}/*4em margin-top for linux/browser*/
+[class="_dataContainer_108ce86"],[class="_actionContainer_7bd364b"],[class="_moduleContainer_c7ad3d9"]{transform: translateY(-6em);}
+#mainHeader:not([data-test="header"]) > * {margin-top: 2em;}/*0em margin-top for linux/browser*/
+.is-windows.is-desktop ._smallHeader_cb3dc61,.is-windows.is-desktop ._smallHeader_f2c3791,.is-windows.is-desktop ._smallHeader_1c02955{
+    background: rgba(255, 255, 255, 0)!Important;
+    background-color: color-mix(in srgb, rgb(var(--card), .8)95% , rgba(0, 0, 0, 0.5) 15%)  !important;
+    box-shadow: inset 0px 0px 8em color-mix(in srgb, rgb(var(--card2), .9)90% , black 10%)
+    , 0px 0px 1em color-mix(in srgb, rgb(var(--cover-LVib1), .2)90% , black 10%) ;
+    backdrop-filter: blur(0px);transition: 0ms;}
+._smallHeader_f2c3791,._smallHeader_383424b,._smallHeader_cb3dc61{background-color: #0000!important;}
+.is-windows.is-desktop ._smallHeader_cb3dc61,.is-windows.is-desktop ._smallHeader_f2c3791,.is-windows.is-desktop ._smallHeader_1c02955
+    {width: calc(100vw - var(--sidebarWidth) - var(--playQueueWidth, 0px) - 1.6vw)!Important;transform: translateX(calc(.8vw + .1px)); border-radius: 1.5em;  }
+
+/*top bar and buttons*/
+[class*="_bar_"] {margin-bottom: -2.5em; background: rgba(243, 243, 255, 0) !important;
+div[class*="_title_"] {display: none !important;}}
+div[class*="_bar_"] button[class*="_button_"]{
+    backdrop-filter: blur(0px) ;transition: 0ms;padding: .1em!important;margin-right: 1em;border-radius: .6em;width: 34px;height: 31px;transform: scale(.7) translateX(1em) translateY(.1em);}
+div[class*="_bar_"] button[class*="_button_"] svg{transform: scale(1.3);}
+div[class*="_bar_"] button[class*="_button_"]:hover{
+    color: rgb(0, 0, 0)!important;
+    background-color: rgb(255, 255, 255)!important ;
+    background: none;
+    box-shadow: 0px 0px 1em color-mix(in srgb, rgba(0, 0, 0, 0.418) 60%, #000000 40%)  ,inset 0px 0px 1.1em white;}
+div._controls_7a73a1e > button._closeButton_560a9f3._button_8536ec0:hover{
+    color: rgb(0, 0, 0)!important;
+    background-color: rgb(255, 0, 0)!important;
+    background-size: 130%;
+    box-shadow: 0px 0px 1em color-mix(in srgb, rgba(0, 0, 0, 0.418) 60%, #000000 40%)  ,     inset 0px 0px 1.25em rgba(255, 255, 255, 0.593)  ;}
+div[class*="_bar_"] button[class*="_button_"] svg:active{filter: brightness(1.3);transform: scale(1) translateY(.1em)!important;transition: 20ms!important;border-radius: .27em!important;}
+/* =========================================================..............................................................
+       END OF LUNALLENA-INSPIRED HEADER-REMOVAL-SYSTEM 
+  ---------------------------------------------------------------- ========================================================= */
