@@ -1,6 +1,12 @@
   /* =========================================================..............................................................
         LUNALLENA-INSPIRED HEADER-REMOVAL-SYSTEM 
   ---------------------------------------------------------------- ========================================================= */
+._contentInner_66693f5{
+    transform: translateY(calc((var(--os-title-bar-height))*1.1));}
+
+  ._nowPlayingContainer_88d37df._hasWindowsTitlebar_974e181{
+    top: 0;
+  }
 ._main_20ab8b1{
     transform: translateY(-3em);
   }
@@ -26,6 +32,7 @@
 .is-fullscreen ._fullscreen_236d61b, .is-compact-mode ._fullscreen_236d61b{
 ._panelWrapper_5734a06._panelWrapperActive_404b577{
     transition: 300ms;height: calc(100% - (var(--miniPlayerHeight)*1.125 ));margin-top: 5.5em;}
+    
 transform: translateY(2.2em);
 [class="_header_2fcc3e4"] {transform: translateY(-2em);}
 [class="_wrapper_512d5f4"] {height:100%;transform: translateY(0em); transition: 300ms; transition-delay: -65ms;}}
@@ -36,13 +43,6 @@ background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0))!
 [class="_fullscreen_236d61b"]{._panelWrapper_5734a06._panelWrapperActive_404b577{
 height: calc(100% - (var(--miniPlayerHeight)*1.51 ))!important; transition: 310ms!important; transition-delay: -95ms!important;}}
 /* MAIN CONTENT SHIFT (HEADER REMOVAL CONT)*/
-.is-windows.is-desktop ._smallHeader_cb3dc61,.is-windows.is-desktop ._smallHeader_f2c3791,.is-windows.is-desktop ._smallHeader_1c02955{
-    background: rgba(255, 255, 255, 0)!Important;
-    background-color: color-mix(in srgb, rgb(var(--card), .8)95% , rgba(0, 0, 0, 0.5) 15%)  !important;
-    box-shadow: inset 0px 0px 8em color-mix(in srgb, rgb(var(--card2), .9)90% , black 10%)
-    , 0px 0px 1em color-mix(in srgb, rgb(var(--cover-LVib1), .2)90% , black 10%) ;
-    backdrop-filter: blur(0px);transition: 0ms;}
-._smallHeader_f2c3791,._smallHeader_383424b,._smallHeader_cb3dc61{background-color: #0000!important;}
 .mainContent
 {padding-bottom: var(--miniPlayerHeight);margin-top: 2em;}/*4em margin-top for linux/browser*/
 [class="_dataContainer_108ce86"],[class="_actionContainer_7bd364b"],[class="_moduleContainer_c7ad3d9"]{transform: translateY(-6em);}
