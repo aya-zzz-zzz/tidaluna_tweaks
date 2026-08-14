@@ -1,0 +1,25 @@
+[data-test=new-now-playing]>[class*="_content_"]{
+    position:absolute !IMPORTANT;}
+._panelWrapper_5734a06._panelWrapperActive_404b577{
+    height: calc(100vh - (var(--miniPlayerHeight)*2.1 ))!Important;;}
+ 
+._artworkContainer_a3f2f92._artworkShifted_92ad2d0{
+    transform: translateY(calc((var(--miniPlayerHeight)*.3 )));}
+  ._contentInner_66693f5{transform: translateY(calc((var(--miniPlayerHeight)*1.8 )));}
+  ._contentInner_66693f5._videoContentShifted_f2f114f{transform: translateY(0em);}
+
+  [class*="_sidebar_"] {background-color: transparent !important;}
+[class="has-footer-player is-desktop-app is-now-playing"]{
+[class*="_nowPlayingContainer"]{
+    background: #0000!important;
+    background-color: #0000!important;}}
+[data-test=new-now-playing]>[class*="_content_"]{z-index: 0!important;}
+button._marketButton_1l1bl_1._tertiary_1l1bl_8._small_1l1bl_3._iconOnly_1l1bl_1._iconButton_fe68160._fullscreenButton_109e50d{
+    display: block!important;}
+[class*="_contentInner"] {
+	max-width: none !important;}
+._panelWrapper_5734a06{
+    transform: translateY(-1em)!important;
+    height: calc(100% - (var(--miniPlayerHeight) * 31.525)) ;}
+._panelWrapper_5734a06 {
+     --panel-bottom-margin: 8.3em;}
