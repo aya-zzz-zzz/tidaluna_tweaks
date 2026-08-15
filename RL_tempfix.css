@@ -1,0 +1,9 @@
+[data-test=new-now-playing]>[class*="_content_"]{
+    position:absolute !IMPORTANT;}
+._panelWrapper_5734a06._panelWrapperActive_404b577{
+    height: calc(100vh - (var(--miniPlayerHeight)*1.8 ))!Important;;}
+ 
+._artworkContainer_a3f2f92._artworkShifted_92ad2d0{
+    transform: translateY(calc((var(--miniPlayerHeight)*.3 )));}
+  ._contentInner_66693f5{transform: translateY(calc((var(--miniPlayerHeight)*1.8 )));}
+  ._contentInner_66693f5._videoContentShifted_f2f114f{transform: translateY(0em);}
