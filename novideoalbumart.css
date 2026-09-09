@@ -1,1 +1,5 @@
 :is(._coverArtContainer_2eafdf9 ._coverArt_79d862c) video {display: none;}
+
+:is(._coverArtContainer_2eafdf9 ._coverArt_79d862c) div{
+    background-image: var(--img) ;
+    background-size: cover;}
